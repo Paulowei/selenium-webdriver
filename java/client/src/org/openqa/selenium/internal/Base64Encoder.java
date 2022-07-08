@@ -49,7 +49,8 @@ public class Base64Encoder {
     //
     // 6) Special padding is done at the end of the stream using the '=' char.
 
-    private static final char[] SIXTY_FOUR_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".toCharArray();
+    private static final char[] SIXTY_FOUR_CHARS = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/")
+        .toCharArray();
     private static final int[] REVERSE_MAPPING = new int[123];
 
     static {
